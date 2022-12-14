@@ -10,7 +10,7 @@ local git_checkout = package_version == "dev" and "master" or package_version
 
 package = package_name
 version = package_version .. "-" .. rockspec_revision
-supported_platforms = { "linux", "macosx" }
+supported_platforms = { "linux", "macosx", "windows" }
 source = {
   url = "git+https://github.com/"..github_account_name.."/"..github_repo_name..".git",
   branch = git_checkout,
